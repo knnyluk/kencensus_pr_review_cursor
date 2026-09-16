@@ -1,6 +1,6 @@
 ---
 name: kencensus-pr-review
-description: Consensus PR review by two independent reviewer subagents — Fable 5 (high reasoning) and GPT 5.6 Sol each review the diff, cross-examine each other's findings, and output a ranked list of PR comments (consensus and contested) plus a list of debunked comments. Use when asked to run kencensus, kencensus review, consensus review, or to review a PR/branch with two models.
+description: Consensus PR review by two independent reviewer subagents — Fable 5.1 (extra-high reasoning) and GPT 5.6 Sol each review the diff, cross-examine each other's findings, and output a ranked list of PR comments (consensus and contested) plus a list of debunked comments. Use when asked to run kencensus, kencensus review, consensus review, or to review a PR/branch with two models.
 ---
 
 # Kencensus PR Review (Cursor-native)
@@ -16,7 +16,7 @@ subagents so the models are exactly the ones requested:
 
 | Reviewer | Task tool model slug | Finding ID prefix |
 |----------|----------------------|-------------------|
-| Fable    | `claude-fable-5-thinking-high` | F1, F2, … |
+| Fable    | `claude-fable-5-1-thinking-xhigh` | F1, F2, … |
 | Sol      | `gpt-5.6-sol-medium` (see note) | S1, S2, … |
 
 **Sol slug note:** the intent is the highest reasoning effort available for
